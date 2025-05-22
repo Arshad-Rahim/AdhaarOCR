@@ -118,7 +118,7 @@ export default function App() {
       formData.append("front", frontFile);
       formData.append("back", backFile);
 
-      const response = await fetch("http://localhost:3000/extract-aadhaar", {
+      const response = await fetch("https://adhaarocr.onrender.com/extract-aadhaar", {
         method: "POST",
         body: formData,
       });
