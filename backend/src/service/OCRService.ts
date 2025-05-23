@@ -1,5 +1,6 @@
 import vision from "@google-cloud/vision";
 import dotenv from "dotenv";
+import { OCRRepository } from "../repository/OCRRepository";
 
 dotenv.config();
 
@@ -10,6 +11,8 @@ const client = new vision.ImageAnnotatorClient({
   },
   projectId: process.env.GOOGLE_CLOUD_PROJECT,
 });
+
+const ocrRepository = new OCRRepository();
 
 export const extractAadhaarDetails = async (
   frontPath: string,
@@ -123,5 +126,8 @@ export const extractAadhaarDetails = async (
       .replace(/^,+|,+$/g, "")
       .trim() || "Not found";
 
+  const data = { aadhaarNumber ,name,dob,gender,address};
+  
+await ocrRepository.saveData(data)
   return { aadhaarNumber, name, dob, gender, address };
 };

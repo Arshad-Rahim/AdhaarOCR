@@ -5,9 +5,12 @@ import fs from "fs";
 import cors from "cors";
 import dotenv from "dotenv";
 import { extractAadhaar } from "./controller/OCRController";
+import { connectDB } from "./config/connectDB";
 
 dotenv.config();
 
+
+connectDB();
 const app = express();
 const PORT = process.env.PORT || 3000;
 
