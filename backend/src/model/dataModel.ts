@@ -23,4 +23,4 @@ const dataSchema = new mongoose.Schema({
   }
 });
 
-export const dataModel = mongoose.model("user", dataSchema);
+export const dataModel = mongoose.model("aadhar-data", dataSchema);
