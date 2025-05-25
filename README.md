@@ -96,4 +96,4 @@ Use HTTPS for deployed applications to secure data transmission.
 Avoid storing sensitive Aadhaar data unless necessary, and ensure compliance with local data protection laws.
 
 📬 Contact
-For issues or contributions, please open a GitHub issue or submit a pull request at https://github.com/yourusername/aadhaar-ocr-app.
+For issues or contributions, please open a GitHub issue or submit a pull request at https://github.com/Arshad-Rahim/AdhaarOCR.
