@@ -37,7 +37,7 @@ Git
 (Optional) Google Cloud Vision API key for enhanced OCR (if not using Tesseract.js)
 
 1. Clone the Repository
-git clone https://github.com/yourusername/aadhaar-ocr-app.git
+git clone https://github.com/Arshad-Rahim/AdhaarOCR.git
 cd aadhaar-ocr-app
 
 2. Setup Backend
